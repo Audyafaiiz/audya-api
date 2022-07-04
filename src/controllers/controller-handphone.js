@@ -72,7 +72,7 @@ module.exports = {
         let dataEdit = {
             nama_hp: req.body.nama_hp,
             jenis_hp: req.body.jenis_hp,
-            n0_seri: req.body.no_seri,
+            no_seri: req.body.no_seri,
             tanggal_produksi: req.body.tanggal_produksi
         }
         let id = req.body.id
