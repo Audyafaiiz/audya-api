@@ -56,7 +56,7 @@ module.exports = {
             if (err) throw err;
             connection.query(
                 `
-                INSERT INTO tabel_handphone SET ?;
+                INSERT INTO tbhandphone SET ?;
                 `, [data],
                 function (error, results) {
                     if (error) throw error;
@@ -75,7 +75,7 @@ module.exports = {
             n0_seri: req.body.no_seri,
             tanggal_produksi: req.body.tanggal_produksi
         }
-        let id_hp = req.body.id_hp
+        let id = req.body.id
         pool.getConnection(function (err, connection) {
             if (err) throw err;
             connection.query(
